@@ -1,2 +1,30 @@
 # pydirecs
 Some files that process other files, haha
+
+
+## Notes  
+this is a project made for fun. Can be used for production uses? Maybe...
+
+
+# Directives
+
+## include
+
+when it find a `$include("path/to/a/pyfile")` in a code ( or more ), him compile them in a code object and exec it, for example:  
+
+```python
+$include("./file1.py")
+$include("./file2.py")
+
+print(some_var_from_the_files_above)
+
+#and pratically everything from files above!
+```
+#### Whats the difference between import and $include?
+it's more *2 faster to load local files. Different from import, where the module/file is loaded in memory, as a class, and more, more.. and include... include files in runtime!
+
+*notes:
+1. 
+It's too experimental, for example, it can't use python modules, and will give more work to solve name conflicts, so, by precaution, continues to use the classic import ;) this'll serves to cases that is needed for speed and debuff to use modular files, okay?
+
+2: it depends from some factors...
