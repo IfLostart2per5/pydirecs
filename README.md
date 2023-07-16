@@ -21,10 +21,11 @@ print(some_var_from_the_files_above)
 #and pratically everything from files above!
 ```
 #### Whats the difference between import and $include?
-it's more *2 faster to load local files. Different from import, where the module/file is loaded in memory, as a class, and more, more.. and include... include files in runtime!
+*2 note
+it's more faster to load local files. Different from import, where the module/file is loaded in memory, as a class, and more, more.. and include... can include files in runtime!
 
 *notes:
 1. 
-It's too experimental, for example, it can't use python modules, and will give more work to solve name conflicts, so, by precaution, continues to use the classic import ;) this'll serves to cases that is needed for speed and debuff to use modular files, okay?
+It's too experimental, for example, it can't use python modules, and will give more work to solve name conflicts, so, by precaution, continues to use the classic import ;) this'll serves to cases that is needed for speed and performance to use modular files, okay?
 
 2: it depends from some factors...
