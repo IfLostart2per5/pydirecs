@@ -9,6 +9,16 @@ this is a project made for fun. Can be used for production uses? Maybe...
 ## Objectives
 Make python a bit to more closer to C...
 
+
+## How to run
+it need to be runned on terminal... sorry for all IDE's👉👈
+
+```sh
+python3 <directive processor>.py file.py
+#OR
+python <directive processor>.py file.py
+#where "file" can be any valid name  of a file
+```
 # Directives
 
 ## include
