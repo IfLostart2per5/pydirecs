@@ -6,6 +6,9 @@ Some files that process other files, haha
 this is a project made for fun. Can be used for production uses? Maybe...
 
 
+## Objectives
+Make python a bit to more closer to C...
+
 # Directives
 
 ## include
