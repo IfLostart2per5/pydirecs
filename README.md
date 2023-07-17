@@ -34,7 +34,7 @@ print(some_var_from_the_files_above)
 #and pratically everything from files above!
 ```
 #### Whats the difference between import and $include?
-*2 note
+*2 note  
 it's more faster to load local files. Different from import, where the module/file is loaded in memory, as a class, and more, more.. and include... can include files in runtime!
 
 *notes:
