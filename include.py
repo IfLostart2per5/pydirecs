@@ -6,6 +6,9 @@ logging.basicConfig(filename="compiler.log", level=logging.INFO, format=FORMAT);
 
 def isOption(value: str) -> bool:
     return value.startswith('--')
+
+def isFile(value: str) -> bool:
+    return not value.startswith('--')
 #main vars
 this = sys.argv[0]
 argsv = sys.argv[1:]
