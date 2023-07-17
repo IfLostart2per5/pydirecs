@@ -14,8 +14,7 @@ this = sys.argv[0]
 argsv = sys.argv[1:]
 options = filter(isOption, argsv)
 
-regex = re.compile(rf'\$include\(".+?"\)\s*?', re.DOTALL)
-
+regex = re.compile(rf'\$include\(".+?"\)\s*?', re.DOTALL)   
 def findIncludeDirectives(arquivo: str) -> list[tuple[str, int]]:
     with open(arquivo, "r") as f:
         content = f.readlines();
@@ -33,7 +32,7 @@ def findIncludeDirectives(arquivo: str) -> list[tuple[str, int]]:
 
 
     for line in lines:
-        if regex.match(line[0]):
+        if regex.match(line[0]) and not line.startswith('#'):
             tlines.append(line);
 
 
