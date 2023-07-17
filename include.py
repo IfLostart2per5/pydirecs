@@ -3,14 +3,15 @@ import re
 import logging
 FORMAT = "[ %(asctime)s ] %(message)s"
 logging.basicConfig(filename="compiler.log", level=logging.INFO, format=FORMAT);
+
+def isOption(value: str) -> bool:
+    return value.startswith('--')
 #main vars
 this = sys.argv[0]
 argsv = sys.argv[1:]
-directivePrefix = '$'
+options = filter(isOption, argsv)
 
-
-directive = "include"
-regex = re.compile(rf'\{directivePrefix}{directive[0]}\(".+?"\)\s*?', re.DOTALL)
+regex = re.compile(rf'\$include\(".+?"\)\s*?', re.DOTALL)
 
 def findIncludeDirectives(arquivo: str) -> list[tuple[str, int]]:
     with open(arquivo, "r") as f:
